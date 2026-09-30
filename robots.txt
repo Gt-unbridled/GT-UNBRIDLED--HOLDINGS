@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gtunbridled.com/sitemap.xml
