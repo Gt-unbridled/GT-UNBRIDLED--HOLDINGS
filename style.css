@@ -26,3 +26,17 @@ footer{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap
 .wa{position:fixed;right:1.1rem;bottom:1.1rem;background:#25d366;color:#062b14;font-weight:700;padding:.75rem 1.2rem;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.4);z-index:9}
 @media(max-width:720px){.menu{display:block}nav{display:none;width:100%;padding-top:.8rem}nav.open{display:block}nav a{display:block;margin:0;padding:.6rem 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.skip{position:absolute;left:-9999px;top:0;background:var(--gold);color:#0b1220;padding:.6rem 1rem;z-index:20}.skip:focus{left:0}
+.hp{position:absolute;left:-9999px}.lead{font-size:1.15rem;color:var(--mu);margin-bottom:2rem}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.flow{width:100%;max-width:440px;justify-self:center}.flow text{fill:var(--tx);font:600 13px system-ui,sans-serif}.flow .ai{font:800 28px Fraunces,Georgia,serif;fill:var(--gold2)}
+.nd{fill:var(--panel);stroke:var(--ln)}.core{fill:var(--bg);stroke:var(--gold);stroke-width:3}.pulse{fill:rgba(212,162,76,.25);transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-out infinite}
+.ln{fill:none;stroke:var(--gold);stroke-width:1.5;stroke-dasharray:5 7;animation:flow 1.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-24}}@keyframes pulse{from{transform:scale(1);opacity:.9}to{transform:scale(1.7);opacity:0}}
+.hot{border-top-color:var(--gold2);background:linear-gradient(160deg,#1a2438,var(--panel))}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;margin:1rem 0}.calc #o{color:var(--gold2);font-size:1.2rem;font-weight:600;margin:1rem 0}
+.steps{padding-left:1.3rem}.steps li{margin:.8rem 0;padding-left:.4rem}
+@media(max-width:860px){.hero{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.ln,.pulse{animation:none}}
+.nd.open{stroke:var(--gold);stroke-dasharray:4 4;fill:none}.flow .st{fill:var(--gold2);font:600 12px system-ui,sans-serif}.tag{color:var(--gold2)!important;font-size:.9rem;margin:0 0 .5rem!important}
